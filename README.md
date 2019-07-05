@@ -60,7 +60,14 @@ Before launch the script install these packages in your **Python3** environment:
 
 # Models
 
-To run the script you need the pythorch models: the large files (700MB) that are on the net (**cm.lib**, **mm.lib**, **mn.lib**). Put these file in a dir named: **checkpoints**. The models exchanged on the network, contain a basic form of encryption (replacement of some bytes), so you may encounter errors. We will soon load the original unencrypted versions.
+To run the script you need the pythorch models: the large files (700MB) that are on the net (**cm.lib**, **mm.lib**, **mn.lib**). Put these file in a dir named: **checkpoints**. You can download them here: [cm.lib](https://github.com/open-deepnude/deepnude-model-3) [mm.lib](https://github.com/open-deepnude/deepnude-model-2) [mn.lib](https://github.com/open-deepnude/deepnude-model-1)
+
+```
+cd checkpoints
+wget -O cm.lib https://github.com/open-deepnude/deepnude-model-3/raw/master/checkpoints/cm.lib
+wget -O mm.lib https://github.com/open-deepnude/deepnude-model-2/raw/master/checkpoints/mm.lib
+wget -O mn.lib https://github.com/open-deepnude/deepnude-model-1/raw/master/checkpoints/mn.lib
+```
 
 # Launch the script
 
