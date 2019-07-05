@@ -69,6 +69,14 @@ wget -O mm.lib https://github.com/open-deepnude/deepnude-model-2/raw/master/chec
 wget -O mn.lib https://github.com/open-deepnude/deepnude-model-1/raw/master/checkpoints/mn.lib
 ```
 
+Due to GitHub bandwidth quota they might not be available. In that case, [download DeepNude from Mega](https://mega.nz/#!VwgHSKxT!9bFR5EhH7z1FjWaCoG66TJPC8Pp_yifryockXCBzXCU), then apply these patches to the .libs:
+
+```
++0x000: 80 02 8A 0A 6C FC 9C 46 F9
++0x0C8: 75 74 69 6C 73 0A 5F 72 65
++0x3E8: 00 00 48 00 4E 74 71 40 51
+```
+
 # Launch the script
 
 ```
